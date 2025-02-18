@@ -100,11 +100,15 @@
             shuffleArray(answersWithIndexes);
     
             answersWithIndexes.forEach(({ answer, index: i }) => {
-                const label = document.createElement("label");
-                label.innerHTML = `<input type="radio" name="question${index}" value="${i}"> ${answer}`;
-                label.addEventListener("click", () => checkAnswer(index, i, q.correct, resultDiv));
-                answersDiv.appendChild(label);
-            });
+                            const label = document.createElement("label");
+                            label.innerHTML = `<input type="radio" name="question${index}" value="${i}"> ${answer}`;
+                            label.addEventListener("click", () => {
+                                audioPlayer.pause();
+                                audioPlayer.currentTime = 0;
+                                checkAnswer(index, i, q.correct, resultDiv);
+                            });
+                            answersDiv.appendChild(label);
+                        });
     
             const resultDiv = document.createElement("div");
             resultDiv.classList.add("result");
