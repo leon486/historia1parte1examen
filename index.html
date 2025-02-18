@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="quiz-container">
-        <h2>Examen de práxtica Historia 1 Parte 1</h2>
+        <h2>Examen de práctica - Audios Historia 1 - Parte 1</h2>
         <div id="quiz"></div>
     </div>
     
@@ -124,8 +124,9 @@
             if (selected === correct) {
                 resultDiv.innerHTML = "Correcto! ✅";
                 resultDiv.style.color = "green";
-            } else {
-                resultDiv.innerHTML = "Te equivocaste! ❌";
+            } else {    
+            const mensajes = ["Te equivocaste! ❌", "Se güalló! ❌", "Swing abanica! ❌", "No ❌", "En serio? ❌", "El mio se va a quemar ❌"];
+            resultDiv.innerHTML = Math.floor(Math.random() * mensajes.length)
                 resultDiv.style.color = "red";
             }
         }
