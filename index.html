@@ -19,7 +19,7 @@
   <body>
     <div class="quiz-container">
       <h2>
-        Examen de práxtica Historia 1 Parte 1
+        Examen de práctica - Audios Historia 1 Parte 1
       </h2>
       <div id="quiz"></div>
     </div>
@@ -163,7 +163,16 @@
                 resultDiv.innerHTML = "Correcto! ✅";
                 resultDiv.style.color = "green";
             } else {
-                resultDiv.innerHTML = "Te equivocaste! ❌";
+                const mensajes = [
+                    "Te equivocaste! ❌",
+                    "Se güalló! ❌",
+                    "Swing abanica! ❌",
+                    "No ❌",
+                    "En serio? ❌",
+                    "El mio se va a quemar ❌"
+                    "Está fea la cosa... ❌"
+                ];
+                resultDiv.innerHTML = mensajes[Math.floor(Math.random() * mensajes.length)]
                 resultDiv.style.color = "red";
             }
         }
