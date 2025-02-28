@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="history.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-      Examen de práctica - Historia 1 Parte 1
+      Examen de práctica - Historia 1 UNPHU
     </title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
@@ -27,28 +27,30 @@
     </div>
     <script>
       
-        const answers = [
-          "Anónimo - Himno a Nikkal",
-          "Anónimo - Epitafio de Seikilos",
-          "Organum Paralelo por Quintas - Tu Patris Sempiternus",
-          "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
-          "Philippe de Vitry - Cum statua",
-          "Guillaume de Machaut - Douce dame jolie", // 5
-          "Canto Proto Romano - Recum Principium",
-          "Hildegard vin Bingen - Ordo Virtutum",
-          "Francesco Landini - Ecco La Primavera"  // 8
-        ]
+      const answers = {
+          himnoNikkal: "Anónimo - Himno a Nikkal",
+          epitafioSikilos: "Anónimo - Epitafio de Seikilos",
+          tuPatrisSeptiernus: "Organum Paralelo por Quintas - Tu Patris Sempiternus",
+          beatrizAChantar: "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
+          vitryCumStatua: "Philippe de Vitry - Cum statua",
+          machautDouceDame: "Guillaume de Machaut - Douce dame jolie", // 5
+          recumPrincipium: "Canto Proto Romano - Recum Principium",
+          hildgardOrdo: "Hildegard vin Bingen - Ordo Virtutum",
+          landiniEccoPrimavera: "Francesco Landini - Ecco La Primavera",  // 8
+          machautJaimSans: "Guillaume De Machaut - J'aim Sans Penser", // 9
+          estampie: "Anónimo - Estampie" // 10
+      }
       
         const quizData = [
             { 
                 audio: "1.himnoANikkal.mp3", 
                 answers: [
-                  "Anónimo - Epitafio de Seikilos",
-                  "Anónimo - Himno a Nikkal",
+                  answers.himnoNikkal,
+                  answers.epitafioSikilos,
                   "Anónimo - Sumer Is Icumen In",
                   "Anónimo - Alma Redemptoris Mater"
                 ],
-                correct: 1 
+                correct: 0
             },
             { 
                 audio: "2.EpitafioDeSeikilos.mp3", 
@@ -75,7 +77,7 @@
                 answers: [
                   "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
                   "Hildegard vin Bingen - Ordo virtutum",
-                  "Guillaume de Machaut - Douce dame jolie",
+                  answers.machautJaimSans,
                   "Philippe de Vitry - Cum statua"
                 ],
                 correct: 0
@@ -124,11 +126,31 @@
                 audio: "9.FrancescoLandini_EccoLaPrimavera.mp3", 
                 answers: [
                   "Guillaume de Machaut - Douce Dame Jolie",
-                  answers[8],
+                  answers.landiniEccoPrimavera,
                   "Philippe de Vitry - Cum statua",
                   "Francesco Landini - Così pensoso"
                 ],
                 correct: 1
+            },
+            { 
+                audio: "10.GuillaumeDeMachaut-JaimSansPenser.mp3", 
+                answers: [
+                  answers.machautJaimSans,
+                  "Guillaume de Machaut - Douce Dame Jolie",
+                  "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
+                  "Francesco Landini - Così pensoso"
+                ],
+                correct: 0
+            },
+            { 
+                audio: "11.Anonimo_estampie.mp3", 
+                answers: [
+                  answers.estampie,
+                  answers.machautJaimSans,
+                  "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
+                  "Francesco Landini - Così pensoso"
+                ],
+                correct: 0
             },
         ];
 
@@ -201,6 +223,6 @@
             }
         }
     </script>
-        V1.6.3 Feb-22-2025
+        V1.7.0 Feb-28-2025
   </body>
 </html>
