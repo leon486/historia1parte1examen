@@ -38,7 +38,9 @@
           hildgardOrdo: "Hildegard vin Bingen - Ordo Virtutum",
           landiniEccoPrimavera: "Francesco Landini - Ecco La Primavera",  // 8
           machautJaimSans: "Guillaume De Machaut - J'aim Sans Penser", // 9
-          estampie: "Anónimo - Estampie" // 10
+          estampie: "Anónimo - Estampie",
+          bernartVentadorLauzeta: "Bernart de Ventadorn - Can Vei la Lauzeta",
+          cantiga159NonSofreMaria: "Cantiga 159 - Non sofre Santa Maria"
       }
       
         const quizData = [
@@ -55,8 +57,8 @@
             { 
                 audio: "2.EpitafioDeSeikilos.mp3", 
                 answers: [
-                  "Anónimo - Epitafio de Seikilos",
-                  "Anónimo - Himno a Nikkal",
+                  answers.epitafioSikilos,
+                  answers.himnoNikkal,
                   "Anónimo - Sumer Is Icumen In",
                   "Anónimo - Alma Redemptoris Mater"
                 ],
@@ -65,7 +67,7 @@
             { 
                 audio: "3.OrganumParaleloPorQuintasTupatrisSempiternus.mp3", 
                 answers: [
-                  "Organum Paralelo por Quintas - Tu Patris Sempiternus",
+                  answers.tuPatrisSeptiernus,
                   "Canto Gregoriano - Viderunt Omnes",
                   "Canto viejo Romano - Tecum Principium",
                   "Anónimo - Sumer Is Icumen In"
@@ -75,30 +77,30 @@
             { 
                 audio: "4.BeatrizDeDiaAChantar.mp3", 
                 answers: [
-                  "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
-                  "Hildegard vin Bingen - Ordo virtutum",
+                  answers.beatrizAChantar,
+                  ansers.hildgardOrdo,
                   answers.machautJaimSans,
-                  "Philippe de Vitry - Cum statua"
+                  answers.vitryCumStatua
                 ],
                 correct: 0
             },
             { 
                 audio: "5.PhilippeDeVitry_CumStatua.mp3", 
                 answers: [
-                  "Philippe de Vitry - Cum statua",
-                  "Hildegard vin Bingen - Ordo virtutum",
+                  answers.vitryCumStatua,
+                  ansers.hildgardOrdo,
                   "Guillaume de Machaut - Douce dame jolie",
-                  "Beatriz de Dia - A chantar m'er de so q'ieu no voldria"
+                  answers.beatrizAChantar,
                 ],
                 correct: 0 
             },
             { 
                 audio: "6.GuillaumeDeMachaut_DouceDameJolie.mp3", 
                 answers: [
-                  "Philippe de Vitry - Cum statua",
-                  "Hildegard vin Bingen - Ordo virtutum",
+                  answers.vitryCumStatua,
+                  ansers.hildgardOrdo,
                   "Guillaume de Machaut - Douce dame jolie",
-                  "Beatriz de Dia - A chantar m'er de so q'ieu no voldria"
+                  answers.beatrizAChantar,
                 ],
                 correct: 2 
             },
@@ -116,9 +118,9 @@
                 audio: "8.HildegardVinBingen_OrdoVirtutum.mp3", 
                 answers: [
                   "Guillaume de Machaut - Douce Dame Jolie",
-                  "Hildegard vin Bingen - Ordo Virtutum",
+                  ansers.hildgardOrdo,
                   "Anónimo - Sumer Is Icumen In",
-                  "Beatriz de Dia - A chantar m'er de so q'ieu no voldria"
+                  answers.beatrizAChantar,
                 ],
                 correct: 1
             },
@@ -127,7 +129,7 @@
                 answers: [
                   "Guillaume de Machaut - Douce Dame Jolie",
                   answers.landiniEccoPrimavera,
-                  "Philippe de Vitry - Cum statua",
+                  answers.vitryCumStatua,
                   "Francesco Landini - Così pensoso"
                 ],
                 correct: 1
@@ -137,7 +139,7 @@
                 answers: [
                   answers.machautJaimSans,
                   "Guillaume de Machaut - Douce Dame Jolie",
-                  "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
+                  answers.beatrizAChantar,
                   "Francesco Landini - Così pensoso"
                 ],
                 correct: 0
@@ -147,7 +149,27 @@
                 answers: [
                   answers.estampie,
                   answers.machautJaimSans,
-                  "Beatriz de Dia - A chantar m'er de so q'ieu no voldria",
+                  answers.beatrizAChantar,
+                  "Francesco Landini - Così pensoso"
+                ],
+                correct: 0
+            },
+            { 
+                audio: "12.Ventadorn_CanVeiLaLauzeta.mp3", 
+                answers: [
+                  answers.bernartVentadorLauzeta,
+                  answers.machautJaimSans,
+                  answers.beatrizAChantar,
+                  "Francesco Landini - Così pensoso"
+                ],
+                correct: 0
+            },
+            { 
+                audio: "13.Cantiga159_NonSofreSantaMaria.mp3", 
+                answers: [
+                  answers.cantiga159NonSofreMaria,
+                  answers.machautJaimSans,
+                  answers.beatrizAChantar,
                   "Francesco Landini - Così pensoso"
                 ],
                 correct: 0
@@ -223,6 +245,6 @@
             }
         }
     </script>
-        V1.7.1 Feb-28-2025
+        v1.7.3 Mar-01-2025
   </body>
 </html>
