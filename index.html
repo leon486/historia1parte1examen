@@ -40,17 +40,27 @@
           machautJaimSans: "Guillaume De Machaut - J'aim Sans Penser", // 9
           estampie: "Anónimo - Estampie",
           bernartVentadorLauzeta: "Bernart de Ventadorn - Can Vei la Lauzeta",
-          cantiga159NonSofreMaria: "Cantiga 159 - Non sofre Santa Maria"
+          cantiga159NonSofreMaria: "Cantiga 159 - Non sofre Santa Maria",
+          cantoGregorianoVideruntOmnes: "Canto Gregoriano. Viderunt Omnes",
+          guidoDarezzoUtQueantLaxis: "Guido D'Arezzo - Ut Queant Laxis",
+          segundoHimnoDelficoApollo: "Limenio, hijo de Teno - Segundo Himno Délfico a Apollo",
+          landiniCosiPenoso: "Francesco Landini - Così pensoso",
+          motete: "Motete - Factum est salutare/Dominus",
+          sumerIsAcumen: "Anónimo - Sumer Is Acumen In",
+          adamDeLaHalleLeJeuDeRobin: "Adan de la Halle - Le Jeu de Robin et Marion",
+          crusadersPalastinalied: "Palästinalied - (Canción de soldados cruzados Alemanes)",
+          conductusAveVirgoVirginum: "Conductus - Ave Virgo Virginum",
+          almaRedemptorisMater: "Anónimo - Alma Redemptoris Mater",
       }
       
         const quizData = [
             { 
-                audio: "1.himnoANikkal.mp3", 
+                audio: "01.himnoANikkal.mp3", 
                 answers: [
                   answers.himnoNikkal,
                   answers.epitafioSikilos,
-                  "Anónimo - Sumer Is Icumen In",
-                  "Anónimo - Alma Redemptoris Mater"
+                  answers.sumerIsAcumen,
+                  answers.almaRedemptorisMater
                 ],
                 correct: 0
             },
@@ -59,8 +69,8 @@
                 answers: [
                   answers.epitafioSikilos,
                   answers.himnoNikkal,
-                  "Anónimo - Sumer Is Icumen In",
-                  "Anónimo - Alma Redemptoris Mater"
+                  answers.sumerIsAcumen,
+                  answers.almaRedemptorisMater
                 ],
                 correct: 0 
             },
@@ -68,9 +78,9 @@
                 audio: "3.OrganumParaleloPorQuintasTupatrisSempiternus.mp3", 
                 answers: [
                   answers.tuPatrisSeptiernus,
-                  "Canto Gregoriano - Viderunt Omnes",
-                  "Canto viejo Romano - Tecum Principium",
-                  "Anónimo - Sumer Is Icumen In"
+                  answers.cantoGregorianoVideruntOmnes,
+                  answers.tecumPrincipium,
+                  answers.sumerIsAcumen,
                 ],
                 correct: 0
             },
@@ -89,7 +99,7 @@
                 answers: [
                   answers.vitryCumStatua,
                   answers.hildgardOrdo,
-                  "Guillaume de Machaut - Douce dame jolie",
+                  answers.machautDouceDame,
                   answers.beatrizAChantar,
                 ],
                 correct: 0 
@@ -99,7 +109,7 @@
                 answers: [
                   answers.vitryCumStatua,
                   answers.hildgardOrdo,
-                  "Guillaume de Machaut - Douce dame jolie",
+                  answers.machautDouceDame,
                   answers.beatrizAChantar,
                 ],
                 correct: 2 
@@ -108,18 +118,18 @@
                 audio: "7.OldRomanChant_TecumPrincipium.mp3", 
                 answers: [
                   answers.tecumPrincipium,
-                  "Canto Gregoriano - Viderunt Omnes",
-                  "Anónimo - Sumer Is Icumen In",
-                  "Organum Paralelo por Quintas - Tu Patris Sempiternus"
+                  answers.cantoGregorianoVideruntOmnes,
+                  answers.sumerIsAcumen,
+                  answers.tuPatrisSeptiernus,
                 ],
                 correct: 0 
             },
             { 
                 audio: "8.HildegardVinBingen_OrdoVirtutum.mp3", 
                 answers: [
-                  "Guillaume de Machaut - Douce Dame Jolie",
+                  answers.machautDouceDame,
                   answers.hildgardOrdo,
-                  "Anónimo - Sumer Is Icumen In",
+                  answers.sumerIsAcumen,
                   answers.beatrizAChantar,
                 ],
                 correct: 1
@@ -127,10 +137,10 @@
             { 
                 audio: "9.FrancescoLandini_EccoLaPrimavera.mp3", 
                 answers: [
-                  "Guillaume de Machaut - Douce Dame Jolie",
+                  answers.machautDouceDame,
                   answers.landiniEccoPrimavera,
                   answers.vitryCumStatua,
-                  "Francesco Landini - Così pensoso"
+                  answers.landiniCosiPenoso
                 ],
                 correct: 1
             },
@@ -138,9 +148,9 @@
                 audio: "10.GuillaumeDeMachaut-JaimSansPenser.mp3", 
                 answers: [
                   answers.machautJaimSans,
-                  "Guillaume de Machaut - Douce Dame Jolie",
+                  answers.machautDouceDame,
                   answers.beatrizAChantar,
-                  "Francesco Landini - Così pensoso"
+                  answers.landiniCosiPenoso
                 ],
                 correct: 0
             },
@@ -150,7 +160,7 @@
                   answers.estampie,
                   answers.machautJaimSans,
                   answers.beatrizAChantar,
-                  "Francesco Landini - Così pensoso"
+                  answers.landiniCosiPenoso
                 ],
                 correct: 0
             },
@@ -160,7 +170,7 @@
                   answers.bernartVentadorLauzeta,
                   answers.machautJaimSans,
                   answers.beatrizAChantar,
-                  "Francesco Landini - Così pensoso"
+                  answers.landiniCosiPenoso
                 ],
                 correct: 0
             },
@@ -245,6 +255,6 @@
             }
         }
     </script>
-        v1.7.4 Mar-01-2025
+        v1.7.5 Mar-01-2025
   </body>
 </html>
