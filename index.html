@@ -1,33 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="history.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      Examen de práctica - Historia 1 UNPHU
-    </title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
-        .quiz-container { max-width: 600px; margin: auto; }
-        .audio-player { margin-bottom: 10px; }
-        .answers { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; justify-content: center; }
-        .answers label { display: flex; align-items: center; justify-content: center; padding: 10px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; }
-        .answers input { margin-right: 5px; }
-        .question { margin-bottom: 4rem; }
-        .result { font-weight: bold; margin-top: 10px; }
-    </style>
-  </head>
-  <body>
-    <div class="quiz-container">
-      <h2>
-        Examen de práctica - Audios Historia 1 Parte 1
-      </h2>
-      <div><a href="https://leon486.github.io/historia1videos1/">Lista de canciones</div>
-      <div id="quiz"></div>
-    </div>
-    <script>
-      
+<div class="quiz-container">
+  <h2>
+    Examen de práctica - Audios Historia 1 Parte 1
+  </h2>
+  <div>
+    <a href="https://leon486.github.io/historia1videos1/">Lista de canciones</a>
+  </div>
+  <div id="quiz"></div>
+</div>
+<script>
       const answers = {
           himnoNikkal: "Anónimo - Himno a Nikkal",
           epitafioSikilos: "Anónimo - Epitafio de Seikilos",
@@ -213,7 +193,6 @@
                   answers.almaRedemptorisMater,
                 ],
                 correct: 0
-            },
           },{ 
               audio: "17.Landini_cosiPensoso.mp3", 
               answers: [
@@ -348,7 +327,7 @@
                 resultDiv.style.color = "red";
             }
         }
-    </script>
-        v1.9.0 Ultima modificación 08-Mar-2025
-  </body>
-</html>
+</script>
+<p>
+  v1.9.0 Ultima modificación 08-Mar-2025
+</p>
