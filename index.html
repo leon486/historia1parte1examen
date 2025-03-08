@@ -23,6 +23,7 @@
       <h2>
         Examen de práctica - Audios Historia 1 Parte 1
       </h2>
+      <div><a href="https://leon486.github.io/historia1videos1/">Lista de canciones</div>
       <div id="quiz"></div>
     </div>
     <script>
@@ -40,7 +41,7 @@
           machautJaimSans: "Guillaume De Machaut - J'aim Sans Penser", // 9
           estampie: "Anónimo - Estampie",
           bernartVentadorLauzeta: "Bernart de Ventadorn - Can Vei la Lauzeta",
-          cantiga159NonSofreMaria: "Cantiga 159 - Non sofre Santa Maria",
+          cantiga159NonSofreMaria: "Alfonso X el sabio - Cantiga 159:Non sofre Santa Maria",
           cantoGregorianoVideruntOmnes: "Canto Gregoriano - Viderunt Omnes",
           guidoDarezzoUtQueantLaxis: "Guido D'Arezzo - Ut Queant Laxis",
           segundoHimnoDelficoApollo: "Limenio, hijo de Teno - Segundo Himno Délfico a Apollo",
@@ -48,7 +49,7 @@
           motete: "Motete - Factum est salutare/Dominus",
           sumerIsAcumen: "Anónimo - Sumer Is Acumen In",
           adamDeLaHalleLeJeuDeRobin: "Adan de la Halle - Le Jeu de Robin et Marion",
-          crusadersPalastinalied: "Palästinalied - (Canción de soldados cruzados Alemanes)",
+          crusadersPalastinalied: "Walther von der Vogelweide - Palästinalied (Canción de soldados cruzados Alemanes)",
           conductusAveVirgoVirginum: "Conductus - Ave Virgo Virginum",
           almaRedemptorisMater: "Anónimo - Alma Redemptoris Mater",
       }
@@ -212,7 +213,8 @@
                   answers.almaRedemptorisMater,
                 ],
                 correct: 0
-            },{ 
+            },
+          },{ 
               audio: "17.Landini_cosiPensoso.mp3", 
               answers: [
                 answers.landiniCosiPenoso,
@@ -225,12 +227,60 @@
                 audio: "18.Motete_FactumEstSalutareDominus.mp3", 
                 answers: [
                   answers.motete,
-                  answers.landiniEccoPrimavera,
                   answers.cantoGregorianoVideruntOmnes,
+                  answers.tuPatrisSeptiernus,
                   answers.almaRedemptorisMater,
                 ],
                 correct: 0
-            },
+              },{ 
+                  audio: "19.SumerIsIcumenIn.mp3", 
+                  answers: [
+                    answers.sumerIsAcumen,
+                    answers.motete,
+                    answers.estampie,
+                    answers.almaRedemptorisMater,
+                  ],
+                  correct: 0
+                },{ 
+                    audio: "20.AdamdelaHalle_LeJeudeRobinEtMarion.mp3", 
+                    answers: [
+                      answers.adamDeLaHalleLeJeuDeRobin,
+                      answers.bernartVentadorLauzeta,
+                      answers.machautJaimSans,
+                      answers.estampie,
+                    ],
+                    correct: 0
+                  },{ 
+                      audio: "21.CanciondeSoldadosCruzadosAlemanes_Palastinalied.mp3",
+                      answers: [
+                        answers.crusadersPalastinalied,
+                        answers.adamDeLaHalleLeJeuDeRobin,
+                        answers.estampie,
+                        answers.motete,
+                      ],
+                      correct: 0
+                  },
+                },{ 
+                    audio: "22.Conductus_AveVirgoVirginum.mp3",
+                    answers: [
+                      answers.conductusAveVirgoVirginum,
+                      answers.machautDouceDame,
+                      answers.vitryCunStatua,
+                      answers.almaRedemptorisMater,
+                    ],
+                    correct: 0
+                },
+                
+              },{ 
+                  audio: "23.AlmaRedemptorisMater.mp3",
+                  answers: [
+                    answers.almaRedemptorisMater,
+                    answers.sumerIsAcumen,
+                    answers.cantoGregorianoVideruntOmnes,
+                    answers.almaRedemptorisMater,
+                  ],
+                  correct: 0
+              },
         ];
 
         function shuffleArray(array) {
@@ -302,6 +352,6 @@
             }
         }
     </script>
-        v1.8.0 Ultima modificación 06-Mar-2025
+        v1.9.0 Ultima modificación 08-Mar-2025
   </body>
 </html>
